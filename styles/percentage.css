@@ -1,0 +1,149 @@
+body {
+  margin-bottom: 10rem;
+}
+
+#heading {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+h1{
+  font-weight: 400;
+}
+h2{
+  font-weight: 400;
+}
+
+input {
+  padding: 10px;
+  margin: 1rem;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+#countries,
+#period-type {
+  padding: 0.5rem;
+  margin: 1rem;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+label {
+  font-size: 1rem;
+}
+
+.content {
+  margin-left: 2rem;
+}
+
+#percentage-btn,
+.percentage-btn {
+  background-color: white;
+  border: none;
+}
+
+#percentage-btn:hover,
+.percentage-btn:hover {
+  background-color: #333;
+  border: none;
+  color: white;
+}
+
+#percentage-difference-btn {
+  background-color: white;
+  border: none;
+}
+
+#percentage-difference-btn:hover {
+  background-color: #333;
+  border: none;
+  color: white;
+}
+
+#percentage-change-btn {
+  background-color: white;
+  border: none;
+  margin-top: 1rem;
+}
+
+#percentage-change-btn:hover {
+  background-color: #333;
+  border: none;
+  color: white;
+}
+
+#answer,
+.answer {
+  padding: 2rem;
+  border: 1px solid #333;
+  border-radius: 5px;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  background-color: white;
+}
+
+.references {
+  margin-left: 2rem;
+}
+
+#reference-list a {
+  margin-top: 1rem;
+}
+#reference-list a:hover {
+  margin-top: 1rem;
+  color: blue;
+}
+#reference-list {
+  margin-top: 1rem;
+}
+
+.percentage {
+  width: 40%;
+}
+
+.left{
+  width: 50%;
+}
+
+
+.simple-interest {
+  width: 50%;
+  margin-left: 2rem;
+}
+
+.article{
+  width: 50%;
+  margin-left: 5rem;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+@media screen and (max-width: 900px) {
+  input[type="submit"],
+  button,
+  .percentage-btn,
+  #percentage-btn,
+  #percentage-change-btn,
+  #percentage-difference-btn {
+    background-color: #333;
+    border: none;
+    color: white;
+  }
+  .article{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .article,
+  .simple-interestv.compound-interest,
+  .future-value,
+  .mortage,
+  .present-value,
+  .percentage {
+    width: 100%;
+  }
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/home.css">
+    <link rel="stylesheet" href="/styles/percentage.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/TechyCoder_Site_icon_512x512.png" type="image/x-icon">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-226031304-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-226031304-1');
+    </script>
+    <title>Future Value Calculator - Calculate Your Future Savings</title>
+    <meta name="description"
+        content="Use our Future Value Calculator to determine the future value of your savings, investments, or retirement account. Calculate now!">
+    <meta name="keyword"
+        content="Future value calculator, Calculate future savings, Future value of investments, Retirement account calculator">
+    <link rel="canonical" href="https://techycoder.com/tools/future-value-calculator" />
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P3CT9QR" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header class="header">
+        <a href="/structure/home.html">
+            <img src="/assets/images/calculator.png" alt="logo" id="logo" />
+        </a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/structure/home.html">
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/structure/calculators/calculators.html">
+                        <span>Calculators</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/structure/passwordConvertor.html">
+                        <span>Password Converters</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/structure/uuidGenerator.html">
+                        <span>UUID Generators</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content-container">
+        <div class="future-value left">
+            <h1 id="heading">Future Value Calculator</h1>
+            <input type="number" id="fv-present-value" placeholder="Enter Present Value" />
+            <input type="number" id="fv-interest-rate" placeholder="Enter Interest Rate" /><br>
+            <input type="number" id="fv-period" placeholder="Enter Period" />
+            <select name="period-type" id="period-type">
+                <option value="days">Days</option>
+                <option value="months">Months</option>
+                <option value="years">Years</option>
+            </select>
+            <br />
+            <textarea name="" class="answer" id="fv-result" placeholder="Result" readonly></textarea>
+            <br />
+            <div class="small-add">
+                <script async
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7309194358629955"
+                    crossorigin="anonymous"></script>
+                <!-- TechyCoder_Tools_Ads -->
+                <ins class="adsbygoogle" style="display:inline-block;height:6rem;"
+                    data-ad-client="ca-pub-7309194358629955" data-ad-slot="9242292638" data-ad-format="auto"
+                    data-full-width-responsive="true">ADD</ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+            <input class="percentage-btn" id="fv-btn" type="submit" value="Calculate"
+                onclick="calculateFutureValue()" />
+        </div>
+        <div class="article right">
+            <p>The future value calculator is a tool that helps to calculate the future worth of an investment or
+                savings account given an initial deposit, interest rate, and the number of years or months it will grow.
+                The formula used to calculate the future value is:</p>
+
+            <h2>Formula: FV = PV * (1 + r)^t</h2>
+
+            <p>Where:</p>
+            <p>FV = future value</p>
+            <p>PV = present value or initial deposit</p>
+            <p>r = interest rate as a decimal</p>
+            <p>t = time in years or months that the investment or savings account will grow</p>
+
+            <p>This formula takes into account the principle amount, interest rate, and the length of time the
+                investment is held to determine the future value of the investment at the end of the specified time
+                period. It can be used to estimate the growth of a savings account, investment portfolio, or any other
+                type of investment that earns interest. The future value calculator is a useful tool for financial
+                planning and can help individuals make informed decisions about their investments and savings goals.</p>
+        </div>
+    </div>
+    <div class="references">
+        <ol>
+            <li id="reference-list"><a href="/structure/calculators/finance/simple-interest.html">Click for
+                    Simple Interest</a>
+            </li>
+            <li id="reference-list"><a href="/structure/calculators/finance/compound-interest.html">Click for Compound
+                    Interest</a></li>
+            <li id="reference-list"><a href="/structure/calculators/finance/present-value.html">Click for Present
+                    Value calculator</a></li>
+            <li id="reference-list"><a href="/structure/calculators/finance/mortage.html">Click for Mortgage
+                    calculator</a></li>
+        </ol>
+    </div>
+
+    <script src="/scripts/calculator.js"></script>
+</body>
+
+</html>

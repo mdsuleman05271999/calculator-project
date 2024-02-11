@@ -1,0 +1,29 @@
+
+.calculators-content-container{
+  margin-top: 10rem;
+  margin-left: 5rem;
+  margin-right: 3rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.percentage-calculators{
+  width: 30%;
+}
+
+.financial-calculators{
+  width: 30%;
+}
+
+.time-calculators{
+  width: 30%;
+}
+
+/* Add a responsive design for screens smaller than 500px */
+@media screen and (max-width: 500px) {
+  .percentage-calculators,
+  .financial-calculators,
+  .time-calculators {
+    width: 100%;
+  }
+}

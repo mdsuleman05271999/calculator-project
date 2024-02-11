@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/home.css">
+    <link rel="stylesheet" href="/styles/percentage.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/TechyCoder_Site_icon_512x512.png" type="image/x-icon">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-226031304-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-226031304-1');
+    </script>
+    <title>Mortgage Calculator - Calculate Your Home Loan Payments</title>
+    <meta name="description"
+        content="Use our Mortgage Calculator to estimate your monthly payments, interest rates and amortization schedule. Get a quick and accurate quote now.">
+    <meta name="keyword" content="Mortgage Calculator, Home Loan Payments, Interest Rates, Amortization Schedule.">
+    <link rel="canonical" href="https://techycoder.com/tools/mortage-calculator" />
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P3CT9QR" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header class="header">
+        <a href="/structure/home.html">
+            <img src="/assets/images/calculator.png" alt="logo" id="logo" />
+        </a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/structure/home.html">
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/structure/calculators/calculators.html">
+                        <span>Calculators</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/structure/passwordConvertor.html">
+                        <span>Password Converters</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/structure/uuidGenerator.html">
+                        <span>UUID Generators</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content-container">
+        <div class="mortage left">
+            <h1 id="heading">Mortgage Calculator</h2>
+                <input type="number" id="mortage-loan-amount" placeholder="Enter Loan Amount" />
+                <input type="number" id="mortage-interest-rate" placeholder="Enter Interest Rate" /><br>
+                <input type="number" id="mortage-period" placeholder="Enter Period" />
+                <select name="period-type" id="period-type">
+                    <option value="days">Days</option>
+                    <option value="months">Months</option>
+                    <option value="years">Years</option>
+                </select><br />
+                <textarea name="" class="answer" id="mortage-result" placeholder="Result" readonly></textarea>
+                <br />
+                <div class="small-add">
+                    <script async
+                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7309194358629955"
+                        crossorigin="anonymous"></script>
+                    <!-- TechyCoder_Tools_Ads -->
+                    <ins class="adsbygoogle" style="display:inline-block;height:6rem;align-items: center;"
+                        data-ad-client="ca-pub-7309194358629955" data-ad-slot="9242292638" data-ad-format="auto"
+                        data-full-width-responsive="true">ADD</ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+                <input class="percentage-btn" id="mortage-btn" type="submit" value="Calculate"
+                    onclick="calculateMortgage()" />
+        </div>
+        <div class="article right">
+            <p>A mortgage calculator is a tool used to determine the monthly payment and overall cost of a mortgage
+                loan. A mortgage loan is a type of loan used to finance the purchase of a property, typically a home.
+                The loan is paid back over a period of time, usually several decades, with interest added on top of the
+                principal.</p>
+
+            <p>The formula used by a mortgage calculator typically includes several variables, including the amount of
+                the loan, the interest rate, the term of the loan, and any additional costs, such as property taxes and
+                insurance.</p>
+
+            <h2>Formula: M = P * (r(1 + r)^n)/((1 + r)^n - 1)</h2>
+
+            <p>Where:</p>
+            <p>M = monthly payment amount</p>
+            <p>P = principal amount of the loan</p>
+            <p>r = monthly interest rate (as a decimal)</p>
+            <p>n = total number of payments</p>
+
+            <p>Note: You'll need to convert the annual interest rate to a monthly interest rate and the loan term from
+                years to months to use this formula.</p>
+
+            <p>Using a mortgage calculator, you can input these variables to determine your monthly payment and the
+                total cost of the loan over the full term of the mortgage. This can help you determine how much you can
+                afford to borrow, how much your monthly payment will be, and the overall cost of the mortgage over the
+                life of the loan.</p>
+        </div>
+    </div>
+    <div class="references">
+        <ol>
+            <li id="reference-list"><a href="/structure/calculators/finance/simple-interest.html">Click for
+                    Simple Interest</a>
+            </li>
+            <li id="reference-list"><a href="/structure/calculators/finance/compound-interest.html">Click for
+                    Compound
+                    Interest</a></li>
+            <li id="reference-list"><a href="/structure/calculators/finance/future-value.html">Click for Future
+                    Value calculator</a></li>
+            <li id="reference-list"><a href="/structure/calculators/finance/mortage.html">Click for Mortage
+                    calculator</a></li>
+        </ol>
+    </div>
+    <script src="/scripts/calculator.js"></script>
+</body>
+
+</html>

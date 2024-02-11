@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/styles/home.css" />
+  <link rel="stylesheet" href="/styles/percentage.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./img/TechyCoder_Site_icon_512x512.png" type="image/x-icon">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-226031304-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-226031304-1');
+  </script>
+  <title>Compound Interest Calculator - Calculate Your Future Savings</title>
+  <meta name="description"
+    content="Use our compound interest calculator to estimate your future savings and see how small investments can grow over time. Start today!">
+  <meta name="keyword"
+    content="Compound interest calculation, Future savings calculator, Investment growth calculator, Financial planning tool">
+  <link rel="canonical" href="https://techycoder.com/tools/compound-interest-calculator" />
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P3CT9QR" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <header class="header">
+    <a href="">
+      <img src="/assets/images/calculator.png" alt="logo" id="logo" />
+    </a>
+    <nav>
+      <ul>
+        <li>
+          <a href="/structure/home.html">
+            <span>Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="/structure/calculators/calculators.html">
+            <span>Calculators</span>
+          </a>
+        </li>
+        <li>
+          <a href="/structure/passwordConvertor.html">
+            <span>Password Converters</span>
+          </a>
+        </li>
+        <li>
+          <a href="/structure/uuidGenerator.html">
+            <span>UUID Generators</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="content-container">
+    <div class="compound-interest left">
+      <h1 id="heading">Compound Interest Calculator</h1>
+      <input type="number" id="ci-principle-amount" placeholder="Enter Principle Amount" />
+      <input type="number" id="ci-interest-rate" placeholder="Enter Interest Rate" />
+      <br />
+      <input type="number" id="ci-period" placeholder="Enter Period" />
+      <select name="period-type" id="period-type">
+        <br />
+        <option value="days">Days</option>
+        <option value="months">Months</option>
+        <option value="years">Years</option>
+      </select>
+      <br />
+      <textarea name="" class="answer" id="ci-result" placeholder="Result" readonly></textarea>
+      <br />
+      <div class="small-add">
+        <script async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7309194358629955"
+          crossorigin="anonymous"></script>
+        <!-- TechyCoder_Tools_Ads -->
+        <ins class="adsbygoogle" style="display:inline-block;height:6rem;align-items: center;"
+          data-ad-client="ca-pub-7309194358629955" data-ad-slot="9242292638" data-ad-format="auto"
+          data-full-width-responsive="true">ADD</ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+      <input class="percentage-btn" id="ci-result-btn" type="submit" value="Calculate" onclick="compoundInterest()" />
+    </div>
+    <div class="article">
+      <p></p>
+      <p>A compound interest calculator is a tool used to determine the interest earned on an investment over a period
+        of time, taking into account the effect of compound interest. Compound interest is the interest earned on both
+        the original principal and the accumulated interest over time.</p>
+
+      <p>The formula for calculating compound interest is: </p>
+
+      <h2> Formula: A = P * (1 + r/n)^(nt)</h2>
+
+      <p>Where:</p>
+      <p>A = the final amount of the investment, including both the original principal and the interest earned</p>
+      <p>P = the initial principal (the original amount invested)</p>
+      <p>r = the annual interest rate</p>
+      <p>n = the number of times the interest is compounded in a year</p>
+      <p>t = the number of years the investment is held</p>
+
+      <p>Using a compound interest calculator, you can input the initial principal, annual interest rate, the number of
+        times the interest is compounded, and the number of years the investment is held, to determine the final amount
+        of the investment.
+      </p>
+
+      <p>Compound interest calculators can be found online or as a feature in many financial software programs. They
+        provide a convenient and easy way to calculate the potential return on an investment, and can be used to compare
+        different investment options and to plan for long-term financial goals, such as saving for retirement.</p>
+      </p>
+    </div>
+  </div>
+  <div class="references">
+    <ol>
+      <li id="reference-list">
+        <a href="/structure/calculators/finance/simple-interest.html">
+          Click for Simple Interest
+        </a>
+      </li>
+      <li id="reference-list">
+        <a href="/structure/calculators/finance/future-value.html">
+          Click for Future Value calculator
+        </a>
+      </li>
+      <li id="reference-list">
+        <a href="/structure/calculators/finance/present-value.html">
+          Click for Present Value calculator
+        </a>
+      </li>
+      <li id="reference-list">
+        <a href="/structure/calculators/finance/mortage.html">
+          Click for Mortgage calculator
+        </a>
+      </li>
+    </ol>
+  </div>
+
+
+  <script src="/scripts/calculator.js"></script>
+</body>
+
+</html>

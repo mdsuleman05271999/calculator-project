@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/home.css">
+    <link rel="stylesheet" href="/styles/percentage.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/TechyCoder_Site_icon_512x512.png" type="image/x-icon">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-226031304-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-226031304-1');
+    </script>
+    <title>Present Value Calculator - Calculate Present Value of Future Cash Flows</title>
+    <meta name="description"
+        content="Our Present Value Calculator helps you to estimate the present value of future cash flows. Simply input future cash flows and discount rate to get results.">
+    <meta name="keyword" content="present value calculator, future cash flows, discount rate, financial planning.">
+    <link rel="canonical" href="https://techycoder.com/tools/present-value-calculator" />
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P3CT9QR" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header class="header">
+        <a href="/structure/home.html">
+            <img src="/assets/images/calculator.png" alt="logo" id="logo" />
+        </a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/structure/home.html">
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/structure/calculators/calculators.html">
+                        <span>Calculators</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/structure/passwordConvertor.html">
+                        <span>Password Converters</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/structure/uuidGenerator.html">
+                        <span>UUID Generators</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content-container">
+        <div class="present-value left">
+            <h1 id="heading">Present Value Calculator</h1>
+            <input type="number" id="fv-value" placeholder="Enter Future Value" />
+            <input type="number" id="fv-interest-value" placeholder="Enter Interest Rate" /><br>
+            <input type="number" id="fv-period" placeholder="Enter Period" />
+            <select name="period-type" id="period-type">
+                <option value="days">Days</option>
+                <option value="months">Months</option>
+                <option value="years">Years</option>
+            </select><br />
+            <textarea name="" class="answer" id="fv-result" placeholder="Result" readonly></textarea>
+            <br />
+            <div class="small-add">
+                <script async
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7309194358629955"
+                    crossorigin="anonymous"></script>
+                <!-- TechyCoder_Tools_Ads -->
+                <ins class="adsbygoogle" style="display:inline-block;height:6rem;align-items: center;"
+                    data-ad-client="ca-pub-7309194358629955" data-ad-slot="9242292638" data-ad-format="auto"
+                    data-full-width-responsive="true">ADDADD</ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+            <input class="percentage-btn" id="fv-btn" type="submit" value="Calculate"
+                onclick="calculatePresentValue()" />
+        </div>
+        <div class="article right">
+            <p>The present value calculator is a tool that helps to calculate the current worth of a future sum of money
+                or an annuity given a certain discount rate and time period. The formula used to calculate present value
+                is:</p>
+
+            <h2>Formula: PV = FV / (1 + r)^t</h2>
+
+            <p>Where:</p>
+            <p>PV = present value</p>
+            <p>FV = future value or the sum of money to be received in the future</p>
+            <p>r = discount rate or interest rate as a decimal</p>
+            <p>t = time in years or months until the future payment or cash flow is received</p>
+
+            <p> The present value calculator is used to determine the current worth of a future payment or cash flow,
+                taking into account the time value of money. This means that the calculator considers that a dollar
+                received today is worth more than a dollar received in the future. The discount rate or interest rate
+                used in the calculation represents the opportunity cost of not investing the money received in the
+                future and the time period until the future payment or cash flow is received.</p>
+
+            <p>The present value calculator is commonly used in finance and investment decisions, such as evaluating
+                the value of a bond, determining the cost of a loan, or assessing the feasibility of a future investment
+                opportunity. By calculating the present value, individuals and businesses can make informed decisions
+                about their financial planning and investments.</p>
+
+
+
+            </p>
+        </div>
+    </div>
+    <div class="references">
+        <ol>
+            <li id="reference-list"><a href="/structure/calculators/finance/simple-interest.html">Click for
+                    Simple Interest</a>
+            </li>
+            <li id="reference-list"><a href="/structure/calculators/finance/compound-interest.html">Click for
+                    Compound
+                    Interest</a></li>
+            <li id="reference-list"><a href="/structure/calculators/finance/future-value.html">Click for Future
+                    Value calculator</a></li>
+            <li id="reference-list"><a href="/structure/calculators/finance/mortage.html">Click for Mortgage
+                    calculator</a></li>
+        </ol>
+    </div>
+
+    <script src="/scripts/calculator.js"></script>
+
+</body>
+
+</html>

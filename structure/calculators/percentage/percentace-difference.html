@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/home.css">
+    <link rel="stylesheet" href="/styles/percentage.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/TechyCoder_Site_icon_512x512.png" type="image/x-icon">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-226031304-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-226031304-1');
+    </script>
+    <title>Percentage Difference Calculator: Compare and Analyze Percentages</title>
+    <meta name="description"
+        content="Compare and analyze two percentages with our percentage difference calculator. Perfect for business, finance, and statistics.">
+    <meta name="keyword" content="percentage difference calculator, compare percentages, percentage comparison tool">
+    <link rel="canonical" href="https://techycoder.com/tools/percentage-difference-calculator/">
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P3CT9QR" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header class="header">
+        <a href="/structure/home.html">
+            <img src="/assets/images/calculator.png" alt="logo" id="logo" />
+        </a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/structure/home.html">
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/structure/calculators/calculators.html">
+                        <span>Calculators</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/structure/passwordConvertor.html">
+                        <span>Password Converters</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/structure/uuidGenerator.html">
+                        <span>UUID Generators</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content-container">
+        <div class="percentage">
+            <h1 id="heading">Percentage Difference Calculator</h1>
+            <input type="text" id="percentage-diff-value1" placeholder="Enter Value 1 here" />
+            <label for=""> of </label>
+            <input type="number" id="percentage-diff-value2" placeholder="Enter Value 2 here" /><br>
+            <textarea name="" class="answer" id="percentage-diff-result" placeholder="Result" readonly></textarea><br>
+            <div class="small-add">
+                <script async
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7309194358629955"
+                    crossorigin="anonymous"></script>
+                <!-- TechyCoder_Tools_Ads -->
+                <ins class="adsbygoogle" style="display:inline-block;height:6rem;align-items: center;"
+                    data-ad-client="ca-pub-7309194358629955" data-ad-slot="9242292638" data-ad-format="auto"
+                    data-full-width-responsive="true">ADD</ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+            <input id="percentage-difference-btn" type="submit" onclick="calculatePercentageDifference()"
+                value="calculate" />
+        </div>
+        <div class="article">
+            <p> Percentage difference calculator is a tool used to determine the difference between two values as a
+                percentage of one of the values. The formula for calculating the percentage difference is:</p>
+
+            <h2>Percentage Difference = (|Value 1 - Value 2| / Value 1) * 100</h2>
+
+            <p>Where Value 1 and Value 2 are the two values being compared. The result will give the difference between
+                the
+                two values as a percentage of Value 1. The absolute value of the difference between the two values is
+                used
+                in the formula to ensure that the result is always positive, regardless of whether Value 1 is larger or
+                smaller than Value 2.</p>
+
+            <p>This calculator is commonly used in finance, economics, and other fields to measure the difference
+                between
+                two figures and determine the level of change. It is particularly useful for comparing values that
+                change
+                over time, such as stocks, exchange rates, and inflation rates, to assess their relative changes.</p>
+        </div>
+    </div>
+    <div class="references">
+        <ol>
+            <li id="reference-list"><a href="/structure/calculators/percentage/percentage.html">Click for
+                    Percentage Calculator</a>
+            </li>
+            <li id="reference-list"><a href="/structure/calculators/percentage/percentage-change.html">Click for
+                    Percentage Change Calculator</a></li>
+        </ol>
+    </div>
+
+
+    <script src="/scripts/calculator.js"></script>
+</body>
+
+</html>

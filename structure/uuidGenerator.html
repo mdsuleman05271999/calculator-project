@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/styles/home.css">
+  <link rel="stylesheet" href="/styles/uuid.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./img/TechyCoder_Site_icon_512x512.png" type="image/x-icon">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-226031304-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-226031304-1');
+  </script>
+  <title>Generate Unique IDs with our UUID Generator Tool</title>
+  <meta name="description"
+    content="Easily create unique identifier codes with our UUID generator tool. No duplication, fast generation, free to use.">
+  <meta name="keyword" content="UUID generator, Unique ID generator, Unique identifier codes, Free UUID tool">
+  <link rel="canonical" href="https://techycoder.com/tools/uuid-generator" />
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P3CT9QR" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <header class="header">
+    <a href="/structure/home.html">
+      <img src="/assets/images/calculator.png" alt="logo" id="logo" />
+    </a>
+    <nav>
+      <ul>
+        <li>
+          <a href="/structure/home.html">
+            <span>Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="/structure/calculators/calculators.html">
+            <span>Calculators</span>
+          </a>
+        </li>
+        <li>
+          <a href="/structure/passwordConvertor.html">
+            <span>Password Converters</span>
+          </a>
+        </li>
+        <li>
+          <a href="/structure/uuidGenerator.html">
+            <span>UUID Generators</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="content-container">
+    <div class="left">
+      <h1 id="heading">Generate UUID'S</h1>
+      <form id="myForm">
+        <label for="number">Enter the number of UUIDs to generate:</label><br>
+        <input type="number" id="number" name="number" placeholder="Enter number" min="1" value="1"><br>
+        <div class="small-add">
+          <script async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7309194358629955"
+            crossorigin="anonymous"></script>
+          <!-- TechyCoder_Tools_Ads -->
+          <ins class="adsbygoogle" style="display:inline-block;height:6rem;align-items: center;"
+            data-ad-client="ca-pub-7309194358629955" data-ad-slot="9242292638" data-ad-format="auto"
+            data-full-width-responsive="true">ADD</ins>
+          <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        </div>
+        <input type="button" id="button" value="Generate" onclick="generateUUID()">
+      </form>
+    </div>
+    <div class="right"></div>
+    <div class="reference">
+      <h2>Other Calculators</h2>
+      <ol>
+        <li id="reference-list"><a href="/structure/calculators/calculators.html">Percentage Calculators</a></li>
+        <li id="reference-list"><a href="/structure/calculators/paypalCalculator.html">Paypal Fee Calculator</a></li>
+        <li id="reference-list"><a href="/structure/passwordConvertor.html">Password Converters</a></li>
+        <li id="reference-list"><a href="/structure/calculators/finance/simple-interest.html">Financial
+            Calculators</a>
+        </li>
+        <li id="reference-list"><a href="/structure/calculators/time/dates.html">Time Calculators</a></li>
+      </ol>
+    </div>
+  </div>
+  <ol id="uuid-list"></ol>
+  <div class="add">ADVERTISEMENT</div>
+
+  <script src="/scripts/uuid-generator.js"></script>
+</body>
+
+</html>

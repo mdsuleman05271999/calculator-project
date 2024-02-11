@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/home.css">
+    <link rel="stylesheet" href="/styles/percentage.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/TechyCoder_Site_icon_512x512.png" type="image/x-icon">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-226031304-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-226031304-1');
+    </script>
+    <title>Simple Interest Calculator | Quick & Easy Calculation</title>
+    <meta name="description"
+        content="Use our Simple Interest Calculator to calculate interest and see how much your savings will grow. Quick, easy and accurate calculation.">
+    <meta name="keyword" content="simple interest calculator, calculate interest, accurate interest calculator">
+    <link rel="canonical" href="https://techycoder.com/tools/simple-interest-calculator" />
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P3CT9QR" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header class="header">
+        <a href="/structure/home.html">
+            <img src="/assets/images/calculator.png" alt="logo" id="logo" />
+        </a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/structure/home.html">
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/structure/calculators/calculators.html">
+                        <span>Calculators</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/structure/passwordConvertor.html">
+                        <span>Password Converters</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/structure/uuidGenerator.html">
+                        <span>UUID Generators</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content-container">
+        <div class="simple-interest">
+            <h1 id="heading">Simple Interest Calculator</h1>
+            <h2>Example : 25% of 100 = 25</h2>
+            <input type="number" id="si-principle-amount" placeholder="Enter Principle Amount" />
+            <input type="number" id="si-amount" placeholder="Enter Interest Rate" /><br>
+            <input type="number" id="si-period" placeholder="Enter Period" />
+            <select name="period-type" id="period-type">
+                <option value="days">Days</option>
+                <option value="months">Months</option>
+                <option value="years">Years</option>
+            </select>
+            <br />
+            <textarea name="" id="answer" placeholder="Result" readonly></textarea>
+            <br />
+            <div class="small-add">
+                <script async
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7309194358629955"
+                    crossorigin="anonymous"></script>
+                <!-- TechyCoder_Tools_Ads -->
+                <ins class="adsbygoogle" style="display:inline-block;height:6rem;align-items: center;"
+                    data-ad-client="ca-pub-7309194358629955" data-ad-slot="9242292638" data-ad-format="auto"
+                    data-full-width-responsive="true">ADD</ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+            <input class="percentage-btn" id="si-btn" type="submit" value="Calculate" onclick="simpleInterest()" />
+        </div>
+        <div class="article">
+            <p>A simple interest calculator is a tool used to determine the interest earned on an investment over a
+                period of time, without taking into account the effect of compound interest. Simple interest is
+                calculated based solely on the original principal and the interest rate, without considering the
+                accumulation of interest over time.</p>
+
+            <p>The formula for calculating simple interest is:</p>
+
+            <h2>I = (P * r * t)/100</h2>
+
+            <p>Where:</p>
+            <p>I = the interest earned</p>
+            <p>P = the principal (the original amount invested)</p>
+            <p>r = the annual interest rate</p>
+            <p>t = the number of years the investment is held</p>
+
+            <p>Using a simple interest calculator, you can input the principal, annual interest rate, and the number of
+                years the investment is held, to determine the amount of interest earned.</p>
+
+            <p>Simple interest calculators are commonly used for short-term investments, such as savings accounts,
+                where the interest earned is paid at the end of the investment period. They provide a quick and easy way
+                to determine the potential return on a simple interest investment and can be used to compare different
+                investment options.</p>
+            </p>
+        </div>
+    </div>
+    <div class="references">
+        <ol>
+            <li id="reference-list"><a href="/structure/calculators/finance/compound-interest.html">Click for
+                    Compound Interest</a>
+            </li>
+            <li id="reference-list"><a href="/structure/calculators/finance/future-value.html">Click for Future
+                    Value calculator</a></li>
+            <li id="reference-list"><a href="/structure/calculators/finance/present-value.html">Click for Present
+                    Value calculator</a></li>
+            <li id="reference-list"><a href="/structure/calculators/finance/mortage.html">Click for Mortgage
+                    calculator</a>
+            </li>
+        </ol>
+    </div>
+    <script src="/scripts/calculator.js"></script>
+</body>
+
+</html>

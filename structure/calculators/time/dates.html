@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/time.css" />
+    <link rel="stylesheet" href="/styles/home.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/TechyCoder_Site_icon_512x512.png" type="image/x-icon">
+
+    <title>Date Calculator: Calculate Date Differences and Future Dates</title>
+    <meta name="description"
+        content="Easily calculate date differences and future dates with our user-friendly date calculator. Perfect for scheduling, project management, and personal use.">
+    <meta name="keyword" content="date calculator, date difference calculator, future date calculator">
+    <link rel="canonical" href="https://techycoder.com/tools/date-calculator/">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-226031304-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-226031304-1');
+    </script>
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P3CT9QR" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header class="header">
+        <a href="/structure/home.html">
+            <img src="/assets/images/calculator.png" alt="logo" id="logo" />
+        </a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/structure/home.html">
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/structure/calculators/calculators.html">
+                        <span>Calculators</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/structure/passwordConvertor.html">
+                        <span>Password Converters</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/structure/uuidGenerator.html">
+                        <span>UUID Generators</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <h1 id="current-timestamp"></h1><br>
+        <h2 id="days-left"></h2>
+        <div class="content-containers">
+            <div class="left">
+                <div class="dates-days">
+                    <h2 id="headings">Days Between Dates</h2>
+                    <input type="date" class="date" id="date1" />
+                    <label for="" id="to">to</label>
+                    <input type="date" class="date" id="date2" />
+                    <br />
+                    <textarea name="" id="date-days" placeholder="Days" readonly></textarea><br />
+                    <button id="date-days-btn" onclick="daysBetweenDates()">
+                        calculate
+                    </button>
+                </div>
+
+                <div class="diff-two-timestamps">
+                    <h2 id="headings">Diffrence between two timestamps</h2>
+                    <input type="text" class="timestamp" id="timestamp1" placeholder="timestamp" />
+                    <label for="" id="to">to</label>
+                    <input type="text" class="timestamp" id="timestamp2" placeholder="timestamp" />
+                    <br />
+                    <p id="milliseconds"></p>
+                    <p id="seconds"></p>
+                    <p id="minutes"></p>
+                    <p id="hours"></p>
+                    <button id="timestamp-diff-btn" onclick="calculateDifference()">differentiate</button>
+                </div>
+            </div>
+            <div class="right">
+                <div class="dates-timestamp">
+                    <h2 id="headings">Date to Timestamp</h2>
+                    <input type="date" class="date" id="date3" />
+                    <button id="date-timestamp-btn" onclick="convertToTimestamp()">convert</button><br />
+                    <textarea name="" id="date-timestamp" placeholder="timestamps" readonly></textarea><br />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/scripts/calculator.js"></script>
+</body>
+
+</html>

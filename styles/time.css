@@ -1,0 +1,112 @@
+.date,
+.timestamp {
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+#to {
+  font-size: 1.5rem;
+}
+
+button {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-left: 1rem;
+  margin-top: 2rem;
+}
+
+button:hover {
+  background-color: #333;
+  color: white;
+}
+
+#date-days,
+#date-timestamp,
+#timestamp-days,
+#timestamp-date{
+  margin-top: 2rem;
+  margin-left: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+#d-heading {
+  color: #333;
+  font-size: 1.5rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin-top: 3rem;
+  margin-bottom: -0.5rem;
+}
+
+.left {
+  width: 50%;
+}
+.right {
+  width: 50%;
+}
+
+.timestamp-date {
+  margin-top: 7rem;
+}
+
+.diff-two-timestamps {
+  margin-top: 5rem;
+}
+
+.content-containers {
+  margin-left: 5rem;
+  margin-right: 3rem;
+  display: flex;
+  flex-direction: row;
+}
+
+#current-timestamp{
+  font-style: italic;
+  margin-top: 10rem;
+  display: inline-block;
+  margin-left: 5rem;
+  font-size: 1.5rem;
+}
+
+#days-left{
+  font-style: italic;
+  margin-top: 2rem;
+  display: inline-block;
+  margin-left: 5rem;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 900px) {
+  .left,
+  .right {
+    width: 100%;
+  }
+  #timestamp2,
+  #date2 {
+    margin-top: 1rem;
+  }
+
+  #date-days-btn,
+  #timestamp-diff-btn,
+  #date-timestamp-btn,
+  #timestamp-date-btn {
+    background-color: #333;
+    border: none;
+    color: white;
+  }
+  .content-containers {
+    margin-left: 3rem;
+    display: flex;
+    flex-direction: column;
+  }
+  #current-timestamp{
+    margin-top: 13rem;
+  }
+  .dates-timestamp{
+    margin-top: 5rem;
+  }
+}
